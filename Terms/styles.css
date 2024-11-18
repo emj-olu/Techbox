@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFF5E7;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+body h2 {
+  font-weight: 500;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  box-shadow: 0px 4px 8px #EAE2D7;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  height: 4rem;
+  background-color: #FFFFFF;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 3rem;
+  padding: 2%;
+  margin-right: 8rem;
+}
+
+.logo-1 img {
+  display: none;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 1.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  position: relative;
+}
+
+nav ul li a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 3px;
+  background-color: orange;
+}
+
+nav ul li a:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 3px;
+  background-color: orange;
+}
+
+.join-button {
+  background-color: #030CEF;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #000000;
+  margin: 5px;
+}
+
+.close-button {
+  display: none;
+  background: none;
+  border: none;
+  color: #000000;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .logo-1 img {
+    display: block;
+  }
+
+  .logo img {
+    display: none;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    margin-left: auto;
+  }
+
+  nav ul.active {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+    padding-top: 4rem;
+    align-items: center;
+    box-shadow: -4px 0 8px #EAE2D7;
+  }
+
+  nav ul li {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+
+  .join-button {
+    font-size: 1rem;
+  }
+
+ .close-button {
+  display: none;
+  background: none;
+  border: none;
+  color: #000000;
+  font-size: 2rem;
+  font-weight:300;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  nav ul.active ~ .close-button {
+    display: block;
+  }
+}
+}
+
+
+.policy-heading {
+  padding: 0.5rem;
+  background-color: #FFF5E7;
+  font-family: 'Space Grotesk', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.policy-header {
+  display: flex;
+  align-items: center; 
+  gap: 0.5rem; 
+  margin-bottom: 2rem;
+}
+
+.policy-header img {
+  width:2rem;
+}
+
+.policy-header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #030CEF;
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.terms-section {
+  background-image: url('Assets/Images/background.png'); /* Replace with actual image path */
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+  border-radius: 10px; 
+}
+
+/* Terms Header with Icon */
+.terms-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.terms-header img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 0.5rem;
+}
+
+.terms-header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Terms Content Styling */
+.terms-content {
+  background-color: #FFFFFF; 
+    padding: 2rem;
+    border-radius: 16px;
+}
+
+.terms-content p {
+  font-size: 1rem;
+  color: #000000;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.terms-content h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #000000;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Link Styling */
+.terms-content a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.terms-content a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .terms-section {
+    padding: 1rem;
+  }
+
+  .terms-content {
+    padding: 1.5rem;
+  }
+
+  .terms-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .terms-content h2 {
+    font-size: 1.1rem;
+  }
+}
+
+  
