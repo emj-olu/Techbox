@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Innovation Lab Form</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="../../../index.html"><img src="Assets/images/TECHBOX 2.svg" alt="TechBox Logo"></a>
+    </div>
+    <div class="navbar-container">
+      <div class="logo-1">
+        <a href="../../../index.html"><img src="Assets/images/TECHBOX 1.svg" alt="TechBox Logo"></a>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="../../index.html#programs">Programs</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#join" class="join-button">Join Community</a></li>
+        </ul>
+        <button class="close-button" onclick="toggleMenu()">X</button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="form">
+  <div class="form-background">
+    <div class="form-container">
+      <div class="form-header">
+        <div class="form-header">
+          <div class="logo-and-text">
+            <img src="Assets/images/TECHBOX 1.svg" alt="TechBox Logo" class="logo">
+            <div class="separator"></div> <!-- This is the thin line -->
+            <h3>Innovation Lab <br> Registration Form</h3>        
+          </div>
+      </div>      
+      <form action="#">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your full name">
+        
+        <label>Email Address</label>
+        <input type="email" placeholder="Enter your email address">
+        
+        <label>Phone Number</label>
+        <div class="phone-input">
+          <select class="country-code">
+            <option value="+234" selected>🇳🇬 +234</option>
+            <option value="+1">🇺🇸 +1</option>
+            <option value="+44">🇬🇧 +44</option>
+            <option value="+91">🇮🇳 +91</option>
+            <!-- Add other countries as needed -->
+          </select>
+          <input type="tel" placeholder="Enter your phone number">
+        </div>        
+        
+        <label for="bootcamp-schedule">Area of Expertise</label>
+        <select id="bootcamp-schedule" name="bootcamp-schedule">
+        <option value="" disabled selected>Select an option</option>
+        <option value="full-time">Design, Technology and Development</option>
+        <option value="part-time">Business & Strategy</option>
+        <option value="part-time">Creative & content Innovation</option>
+        <option value="part-time">Science & Emerging Technologies</option>
+        <option value="part-time">Education & Skill development</option>
+        <option value="part-time">Customer Experience & Research</option>
+        </select>
+        
+        <label for="bootcamp-schedule">Availability</label>
+        <select id="bootcamp-schedule" name="bootcamp-schedule">
+        <option value="" disabled selected>Select an option</option>
+        <option value="full-time">Full-Time</option>
+        <option value="part-time">Part-Time</option>
+        <option value="part-time">Project based</option>
+        <option value="part-time">Weekends only</option>
+        <option value="part-time">Monthly check-ins only</option>
+        </select>
+        
+        <a href="../innovation payoption/index.html"><button type="submit">Register Now</button></a>
+      </form>
+    </div>
+  </div>
+  </div>
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
