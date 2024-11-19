@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Talent Accelerator Form</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="../../../index.html"><img src="Assets/images/TECHBOX 2.svg" alt="TechBox Logo"></a>
+    </div>
+    <div class="navbar-container">
+      <div class="logo-1">
+        <a href="../../../index.html"><img src="Assets/images/TECHBOX 1.svg" alt="TechBox Logo"></a>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../../../About/index.html#about">About</a></li>
+          <li><a href="../../index.html#programs">Programs</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="../../../Contact/index.html">Contact</a></li>
+          <li><a href="../../../Community/index.html" class="join-button">Join Community</a></li>
+        </ul>
+        <button class="close-button" onclick="toggleMenu()">X</button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="form">
+  <div class="form-background">
+    <div class="form-container">
+      <div class="form-header">
+        <div class="form-header">
+          <div class="logo-and-text">
+            <a href="../../../index.html"><img src="Assets/images/TECHBOX 1.svg" alt="TechBox Logo" class="logo"></a>
+            <div class="separator"></div> 
+            <h3>Tech Talent Accelerator <br> Registration Form</h3>        
+          </div>
+      </div>      
+      <form action="../Techtalent payoption/index.html" method="post">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your full name" required>
+        
+        <label>Email Address</label>
+        <input type="email" placeholder="Enter your email address" required>
+        
+        <label>Phone Number</label>
+        <div class="phone-input">
+          <select class="country-code" required>
+            <option value="+234" selected>🇳🇬 +234</option>
+            <option value="+1">🇺🇸 +1</option>
+            <option value="+44">🇬🇧 +44</option>
+            <option value="+91">🇮🇳 +91</option>
+
+          </select>
+          <input type="tel" placeholder="Enter your phone number" required>
+        </div>        
+        
+        <label for="bootcamp-schedule">Select your focus</label>
+        <select id="bootcamp-schedule" name="bootcamp-schedule" required>
+        <option value="" disabled selected>Select one option</option>
+        <option value="cloud">Cloud & Infrastrucure Security</option>
+        <option value="cybersecurity">Cybersecurity Compliance</option>
+        <option value="data-1">Data Analysis & Visualization</option>
+        <option value="data-2">Data Engineering & Big Data</option>
+        <option value="data-3">Data structure & algorithims</option>
+        <option value="devops">DevOps & Cloud Infrastructure</option>
+        <option value="digital">Digital Content & Social Media Strategy</option>
+        <option value="email">Email Marketing & Automation</option>
+        <option value="hacking">Ethical Hacking & Penetration Testing</option>
+        <option value="development">Full Stack Development</option>
+        <option value="ai">Machine Learning & AI Application</option>
+        <option value="mobile">Mobile Development</option>
+        <option value="design">Motion & 3D Design</option>
+        <option value="network">Network & Application Security</option>
+        <option value="performance">Performance & Paid Advertising</option>
+        <option value="seo">Search Engine Optimization (SEO)</option>
+        <option value="security">Security Operations & Digital Forensics</option>
+        <option value="software">Software Architecture & Systems</option>
+        <option value="design-1">UI & UX Design</option>
+        <option value="design-2">Visual & Brand Identity Design</option>
+        </select>
+        
+        <label for="bootcamp-schedule">Preferred Bootcamp Schedule</label>
+         <select id="bootcamp-schedule" name="bootcamp-schedule" required>
+         <option value="" disabled selected>Select your preferred schedule</option>
+         <option value="full-time">8 Weeks (Full time)</option>
+         <option value="part-time">12 Weeks (Part time)</option>
+         </select>
+        
+        <a href="../Techtalent payoption/index.html"><button type="submit">Register Now</button></a>
+      </form>
+    </div>
+  </div>
+  </div>
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

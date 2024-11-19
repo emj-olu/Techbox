@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Failed</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+<style>
+  /* General styles */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+  }
+
+  .failure-container {
+    width: 90%;
+    max-width: 500px;
+    border: 2px solid #0000ff;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    background-color: #ffffff;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .header img {
+    width: 50px;
+  }
+
+  .header h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    color: #0000ff;
+    font-size: 1rem;
+  }
+
+  .icon-failed {
+    
+    top: 50%;
+    left: 50%;
+  }
+
+  .icon-failed::before,
+  .icon-failed::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+
+  .icon-failed::before {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 0, 0, 0.2);
+  }
+
+  .icon-failed::after {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 0, 0, 0.4);
+  }
+
+  .icon-failed .cross-icon {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 0, 0, 1);
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .message-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 1rem;
+  }
+
+  .message-text {
+    font-size: 0.9rem;
+    color: #333;
+    margin-top: 0.5rem;
+    line-height: 1.4;
+  }
+</style>
+</head>
+<body>
+
+<div class="failure-container">
+  <div class="header">
+    <img src="Assets/images/logo.png" alt="Tech Box Logo"> <!-- Replace with the actual logo path -->
+    <h2>Startup Incubator <br> Registration Form</h2>
+  </div>
+  
+  <div class="icon-failed">
+    <div class="cross-icon">✖</div>
+  </div>
+
+  <div class="message-title">Registration Failed</div>
+  <div class="message-text">Failed to complete the registration. <br> Please re-try</div>
+</div>
+
+</body>
+</html>
